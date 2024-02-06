@@ -1,7 +1,9 @@
-import React, { useState } from "react";
+import { MemberContext } from "context/MemberContext";
+import { useContext } from "react";
 import styled, { css } from "styled-components";
 
-function Tabs({ activeMember, setActiveMember }) {
+function Tabs() {
+  const { activeMember, setActiveMember } = useContext(MemberContext);
   const onActiveMember = (e) => {
     if (e.target === e.currentTarget) return;
 

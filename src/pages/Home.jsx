@@ -1,19 +1,14 @@
 import AddForm from "components/AddForm";
 import Header from "components/Header";
 import LetterList from "components/LetterList";
-import React, { useState } from "react";
 import styled from "styled-components";
 
-function Home({ letters, setLetters }) {
-  const [activeMember, setActiveMember] = useState("카리나");
+function Home() {
   return (
     <Container>
-      <Header
-        activeMember={activeMember}
-        setActiveMember={setActiveMember}
-      ></Header>
-      <AddForm setLetters={setLetters}></AddForm>
-      <LetterList letters={letters} activeMember={activeMember}></LetterList>
+      <Header></Header>
+      <AddForm></AddForm>
+      <LetterList></LetterList>
     </Container>
   );
 }

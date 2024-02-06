@@ -2,14 +2,11 @@ import React from "react";
 import Tabs from "./Tabs";
 import styled from "styled-components";
 
-function Header({ activeMember, setActiveMember }) {
+function Header() {
   return (
     <Container>
       <Title>에스파 팬레터함</Title>
-      <Tabs
-        activeMember={activeMember}
-        setActiveMember={setActiveMember}
-      ></Tabs>
+      <Tabs></Tabs>
     </Container>
   );
 }
