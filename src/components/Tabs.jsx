@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import styled, { css } from "styled-components";
 
 function Tabs({ activeMember, setActiveMember }) {
