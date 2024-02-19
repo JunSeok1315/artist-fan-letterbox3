@@ -12,7 +12,7 @@ function LetterCard({ letter }) {
         <Avatar src={letter.avatar}></Avatar>
         <NicknameAndDate>
           <p>{letter.nickname}</p>
-          <tiem>{getFormattedDate(letter.createdAt)}</tiem>
+          <time>{getFormattedDate(letter.createdAt)}</time>
         </NicknameAndDate>
       </UserInfo>
       <Content>{letter.content}</Content>
